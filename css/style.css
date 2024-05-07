@@ -1,13 +1,24 @@
 :root {
   --color-AliceBlue: #f4f8ff;
+  --color-Black: #1f2224;
 
-   --width-site: 1208px; /*1208px; 1440px; */
+  --font-FixelText: "Fixel Text", Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+  --font-FixelDisplay: "Fixel Display", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+
+  --font-size: 1rem;
+
+  --width-site: 1208px; /*1208px; 1440px; */
 }
 
 body {
-  background: var(--color-AliceBlue);
   width: 100vw;
   height: 100vh;
+
+  font-family: var(--font-FixelText);
+  /* font-weight: 700; */
+  font-style: normal;
+  color: var(--color-Black);
+  background: var(--color-AliceBlue);
 }
 
 .container {
@@ -15,21 +26,25 @@ body {
   max-width: var(--width-site);
 }
 
-/* HEADER */
-.header {
+.header,
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
+
+/* HEADER */
 .logo {
   width: 60px;
   height: 23px;
 }
 
 /* FOOTER */
-.address {
 
+.address {
+  font-weight: 300;
+  font-style: normal;
 }
-.copyright::before {
-    content: "\00a9";
+.copyright::after {
+  content: "\00a9";
 }
