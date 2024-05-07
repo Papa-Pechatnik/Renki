@@ -15,10 +15,15 @@ body {
   height: 100vh;
 
   font-family: var(--font-FixelText);
-  /* font-weight: 700; */
+  font-weight: 700;
   font-style: normal;
   color: var(--color-Black);
   background: var(--color-AliceBlue);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
