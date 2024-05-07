@@ -1,0 +1,35 @@
+:root {
+  --color-AliceBlue: #f4f8ff;
+
+   --width-site: 1208px; /*1208px; 1440px; */
+}
+
+body {
+  background: var(--color-AliceBlue);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: var(--width-site);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+  width: 60px;
+  height: 23px;
+}
+
+/* FOOTER */
+.address {
+
+}
+.copyright::before {
+    content: "\00a9";
+}
