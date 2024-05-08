@@ -1,13 +1,18 @@
 :root {
   --color-AliceBlue: #f4f8ff;
   --color-Black: #1f2224;
+  --color-MidnightBlue: #072546;
+
+  --color-Snow: #f9f9f9;
+  --color-MediumSpringGreen: #00ffc6;
+  --color-borderSnow: rgba(174, 172, 172, 0.5);
 
   --font-FixelText: "Fixel Text", Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
   --font-FixelDisplay: "Fixel Display", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 
   --font-size: 1rem;
-
-  --width-site: 1208px; /*1208px; 1440px; */
+  --padding-left-right: clamp(0.75rem, -0.02391rem + 3.175vw, 1.5rem);
+  --width-site: 90rem;
 }
 
 body {
@@ -22,34 +27,190 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 .container {
   margin-inline: auto;
   max-width: var(--width-site);
+  padding: 0 clamp(1.25rem, -0.97861rem + 9.143vw, 7.25rem);
 }
 
 .header,
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* HEADER */
 .logo {
   width: 60px;
   height: 23px;
 }
 
-/* FOOTER */
+.btn {
+  display: block;
+  border: 2px solid var(--color-MidnightBlue);
+  border-radius: 100px;
+  padding: 24px 48px;
+  width: max-content;
+}
+.right-arr {
+  width: 24px;
+  height: 25px;
+}
+/* HEADER */
+.header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
+/* MAIN */
+.pre-registration {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--color-Snow);
+  border: 1px solid var(--color-borderSnow);
+  border-radius: 8px;
+  padding: clamp(2.5rem, 3.53179rem + -4.233vw, 1.5rem) var(--padding-left-right);
+  width: 100%;
+  column-gap: 16px;
+  height: max-content;
+}
+
+.pre-registration__box {
+  /* position: relative; */
+
+  width: min-content;
+}
+
+.pre-registration__box_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 56%;
+  min-width: 250px;
+  color: var(--color-Snow);
+  background: var(--color-MidnightBlue);
+  border-radius: 6.25rem;
+  padding: 1rem 2rem;
+  transition: 0.7s linear;
+}
+
+.pre-registration__box_link:is(:hover, :focus) {
+  color: var(--color-MidnightBlue);
+  background: var(--color-MediumSpringGreen);
+}
+
+.pre-registration__box-titel {
+  position: relative;
+}
+
+.pre-registration__box-titel h1 {
+  --margin: clamp(32px, 6cqw, 64px);
+  font-family: var(--font-FixelDisplay);
+  font-size: clamp(2.5rem, 0.00016rem + 6.944vw, 6.25rem);
+  line-height: 110%;
+
+  margin-bottom: var(--margin);
+}
+
+.pre-registration__box-titel img {
+  position: absolute;
+  bottom: -8%; /* !ТУТ подумать перемещение */
+  left: 59%; /* !ТУТ подумать перемещение */
+  transform: rotate(-60deg);
+  width: clamp(3.125rem, -2.01772rem + 10.714vw, 7.625rem);
+}
+
+.pre-registration__img {
+  max-width: 377px;
+  width: 100%;
+  max-height: 460px;
+  height: 100%;
+}
+
+.pre-registration__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.service {
+  display: flex;
+  margin: 24px 0;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 8px;
+  /* width: max-content; */
+  background: var(--color-Snow);
+  border: 1px solid var(--color-borderSnow);
+  border-radius: 8px;
+  padding: var(--padding-left-right);
+  height: 436px; /*! не варыант*/
+}
+
+.service-list__items {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+
+.list-items_spin {
+  position: relative;
+}
+
+.list-item_rotate {
+  position: absolute;
+  right: -27%;
+  bottom: 0px;
+  transform: translate(27%, 0) rotate(-24deg);
+  
+}
+
+.team {
+  display: flex;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 .address {
   font-weight: 300;
   font-style: normal;
 }
 .copyright::after {
   content: "\00a9";
+}
+
+@media screen and (max-width: 576px) {
+  .pre-registration__box-titel h1 {
+    margin-top: var(--margin);
+  }
+
+  .pre-registration {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .pre-registration__img {
+    width: 50%;
+    height: 50%;
+  }
 }
