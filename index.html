@@ -13,83 +13,96 @@
 
     <link rel="icon" href="./favicon.ico" sizes="32x32">
     <link rel="icon" href="./img/ico/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./img/ico/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="apple-touch-icon" href="./img/ico/apple-touch-icon.png">
     <link rel="manifest" href="./manifest.webmanifest">
 
 </head>
 
 <body>
-    <header class="container">
-        <div class="header">
-            <img class="logo" src="./img/logo-renki.svg" alt="logo renki">
-            <a href="mailto:renki@renki.online">renki@renki.online</a>
-        </div>
+    <header>
+        <section class="container">
+            <div class="header">
+                <img class="logo" src="./img/logo-renki.svg" alt="logo renki">
+                <a class="header_link" href="mailto:renki@renki.online">renki@renki.online</a>
+            </div>
+        </section>
     </header>
 
-    <main class="container">
-        <section class="pre-registration">
-            <div class="pre-registration__box">
-                <header class="pre-registration__box-titel">
-                    <h1>Доставляємо ремонт</h1>
-                    <img src="./img/tool.svg" alt="tool">
-                </header>
-                <a class="pre-registration__box_link" href="https://forms.gle/o38LpmTcqBoTKcEa8"
-                    title="Форма реєстрації" target="_blank">
-                    <p>Ранній доступ</p>
-                    <svg class="right-arr" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 12.4277H3M21 12.4277L15 6.42767M21 12.4277L15 18.4277" stroke="#F8F9F9"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-            <picture class="pre-registration__img">
-                <img src="./img/mobi-renki.png" alt="mobi renki">
-            </picture>
-        </section>
-        <section class="service">
-            <ul class="service-list">
-                <ul class="service-list__items list-items1">
-                    <li class="list-items_spin"><strong class="btn list-item_rotate">Інтуітивний інтерфейс</strong></li>
-                    <li><strong class="btn">Гарантія результату виконання</strong></li>
-                </ul>
-                <ul class="service-list__items list-items2">
-                    <li><strong class="btn">Фотозвіт кожного етапу</strong></li>
-                    <li><strong class="btn">Повністю український продукт</strong></li>
-                </ul>
-                <ul class="service-list__items list-items3">
-                    <li><strong class="btn">Зручний калькулятор вартості робіт</strong></li>
-                    <li><strong class="btn">Моніторинг процесу</strong></li>
-                </ul>
-            </ul>
-            <section class="team">
-                <div class="team-box">
-                    <p>Наша команда</p>
-                    <ul class="team-list">
-                        <li>
-                            <img src="./img/avatar1.png" alt="avatar">
-                        </li>
-                        <li>
-                            <img src="./img/avatar2.png" alt="avatar">
-                        </li>
-                        <li>
-                            <img src="./img/avatar3.png" alt="avatar">
-                        </li>
-                        <li class="avatars-more">
-                            <img src="./img/avatars-more.png" alt="avatar">
-                            <span class="avatars-more_count">+4</span>
-                        </li>
+    <main>
+        <div class="container">
+            <section class="pre-registration">
+                <div class="pre-registration__box">
+                    <header class="pre-registration__box-titel">
+                        <h1>Доставляємо ремонт</h1>
+                        <img src="./img/tool.svg" alt="tool">
+                    </header>
+                    <a class="pre-registration__box_link" href="https://forms.gle/o38LpmTcqBoTKcEa8"
+                        title="Форма реєстрації" target="_blank">
+                        <p>Ранній доступ</p>
+                        <svg class="right-arr" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.4277H3M21 12.4277L15 6.42767M21 12.4277L15 18.4277" stroke="#F8F9F9"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <picture class="pre-registration__img">
+                    <img src="./img/mobi-renki.png" alt="mobi renki">
+                </picture>
+            </section>
+            <section class="service">
+                <div class="service-list__box">
+                    <ul class="service-list">
+                        <ul class="service-list__items list-items1">
+                            <li class="list-items_spin"><strong class="btn list-item_rotate">Інтуітивний
+                                    інтерфейс</strong>
+                            </li>
+                            <li><strong class="btn">Гарантія результату виконання</strong></li>
+                        </ul>
+                        <ul class="service-list__items list-items2">
+                            <li><strong class="btn">Фотозвіт кожного етапу</strong></li>
+                            <li><strong class="btn">Повністю український продукт</strong></li>
+                        </ul>
+                        <ul class="service-list__items list-items3">
+                            <li><strong class="btn">Зручний калькулятор вартості робіт</strong></li>
+                            <li><strong class="btn">Моніторинг процесу</strong></li>
+                        </ul>
                     </ul>
                 </div>
+
+
+                <section class="team">
+                    <div class="team-box">
+                        <p>Наша команда</p>
+                        <ul class="team-list">
+                            <li>
+                                <img src="./img/avatar1.png" alt="avatar">
+                            </li>
+                            <li>
+                                <img src="./img/avatar2.png" alt="avatar">
+                            </li>
+                            <li>
+                                <img src="./img/avatar3.png" alt="avatar">
+                            </li>
+                            <li class="avatars-more">
+                                <img src="./img/avatars-more.png" alt="avatar">
+                                <span class="avatars-more_count">+4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-        </section>
+        </div>
     </main>
 
-    <footer class="container">
-        <div class="footer">
-            <img class="logo" src="./img/logo-renki.svg" alt="logo renki">
-            <address class="address"><span class="copyright"></span><span>&nbsp;Renki 2024. Всі права захищені</span>
-            </address>
-        </div>
+    <footer>
+        <section class="container">
+            <div class="footer">
+                <img class="logo" src="./img/logo-renki.svg" alt="logo renki">
+                <address class="address"><span class="copyright"></span><span>&nbsp;Renki 2024. Всі права
+                        захищені</span>
+                </address>
+            </div>
+        </section>
     </footer>
 </body>
 
